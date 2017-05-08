@@ -1,1 +1,1 @@
-web: sh -c 'cd ./backend/ && exec java -jar target/backend-0.0.1-SNAPSHOT.jar'
+web: sh -c 'cd ./backend/ && exec java -Dserver.port=$PORT -jar target/backend-0.0.1-SNAPSHOT.jar'
