@@ -1,0 +1,109 @@
+/*Dashboard*/
+.rightcontainer {
+width: 84%;
+float: right;
+margin-left: 10px;
+background-color: #f1f1f1;
+}
+.pra-widget.dashboardcontainer{
+	float: left;
+	width: 100%;
+	background-color: #f1f1f1 !important;
+	}
+div.pra-widget.newscomponent{
+	float: left;
+	width: 100%;
+	margin-bottom: 0px;
+	background-color: #f1f1f1 !important;
+	}
+.dashboardfloat{
+	width: 50%;margin-bottom: 0px;float: left; background-color: #f1f1f1 !important;border:0px ;box-shadow:none;padding-right: 4px;}
+.dashboardslider{
+	width: 50%;margin-bottom: 0px;float: right; background-color: #f1f1f1 !important;border:0px ;box-shadow:none;padding-right: 10px;}
+.dashboard-full{
+	margin-bottom: 0px;
+	background-size: cover;
+	float: left;
+	width: 55%;	
+	background-color: #f1f1f1 !important;
+	}
+.rightside{
+	margin-bottom: 0px;
+	background-size: cover;
+	float: right;
+	width: 45%;	
+}
+div.pra-widget.dashboardfull { /*New change for dynamic page for media*/ 
+		width: 100%;
+		margin-bottom: 0px;
+		float: left;
+		background-color: #f1f1f1 !important;
+
+	  }
+div.floatwidgets{  /* New changes for dynamic page media */
+		width: 100%; vertical-align: top; border: 0px; text-align: left;float: right;}	
+div.floating {
+	padding: 0px 0px 0px 10px;
+    float: right;
+	width: 100%; /*New changes for dynamic page for media */
+}
+div.slidewidgets { /*New change for dynamic page for media*/ 
+		width: 100%;
+		margin-bottom: 0px;
+		/*float: right;*/
+		margin-left:5px;
+		background-color: #f1f1f1 !important;border:0px ;box-shadow:none;
+	  }	
+div.slideleft {
+		width: 100%;
+		border: 0px;
+		text-align: left;
+		float: right;
+	}
+div.slideright {
+		width: 100%;
+		border: 0px;
+		text-align: left;
+		float: right;
+	}
+/*==========Left Nev===========*/
+.pratextimg{
+	background: url('../images/text_insidepra.png');
+	width: 83%;
+	height: 25px;
+	/* position: absolute; */
+	/* float: left; */
+	background-repeat: no-repeat;
+	text-align: center; 
+	/*font-family: Klinic Slab;
+	font-size: 2em;
+	color: #ff5481 !important;
+	font-weight: bold;*/
+	zoom:93%*;
+}
+
+/* ArticleDetailPage*/
+#bigpolicy-updates {
+	vertical-align: top;
+	text-align: left;
+	width: 76%;
+	border: 0px;
+	float:left !important;
+}
+/*------------Application page----------*/
+.applicationpageslider{
+	margin-bottom: 0px;
+	background-size: cover;
+	float: right;
+	width: 23.3%;	
+}
+.sliderContent{
+	width: 100%;
+	margin-bottom: 0px;
+	float: right;
+	background-color: #f1f1f1 !important;
+	border: 0px;
+	box-shadow: none;
+	padding-right: 10px;
+}
+		  	
