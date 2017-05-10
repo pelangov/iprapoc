@@ -2,7 +2,6 @@ spring:
     datasource:
         driver-class-name: org.postgresql.Driver
         url: ${JDBC_DATABASE_URL}
-        type: com.zaxxer.hikari.HikariDataSource
         hikari:
             minimum-idle: 1
             maximum-pool-size: 5

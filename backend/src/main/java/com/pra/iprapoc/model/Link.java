@@ -1,9 +1,12 @@
 package com.pra.iprapoc.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name="ipa_links__c")
@@ -52,11 +55,18 @@ public class Link implements Serializable {
     @Column(name="page__c")
     private String page;
 
-    @Column(name="parent_link__c")
-    private String parentLink;
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "parent_link__c", referencedColumnName = "sfid")
+    public Link parentLink;
 
-    @Column(name="recordtypeid")
-    private String recordTypeId;
+    @OneToMany(mappedBy="parentLink", cascade = CascadeType.ALL)
+    @OrderBy("weight, name")
+    public List<Link> subLinks;
+
+    @ManyToOne
+    @JoinColumn(name = "recordtypeid", referencedColumnName = "sfid")
+    private RecordType recordType;
 
     @Column(name="restricted_link__c")
     private Boolean restrictedLink;
@@ -194,20 +204,28 @@ public class Link implements Serializable {
         this.page = page;
     }
 
-    public String getParentLink() {
+    public Link getParentLink() {
         return this.parentLink;
     }
 
-    public void setParentLink(String parentLink) {
+    public void setParentLink(Link parentLink) {
         this.parentLink = parentLink;
     }
 
-    public String getRecordTypeId() {
-        return this.recordTypeId;
+    public RecordType getRecordType() {
+        return this.recordType;
     }
 
-    public void setRecordTypeId(String recordTypeId) {
-        this.recordTypeId = recordTypeId;
+    public void setRecordType(RecordType recordType) {
+        this.recordType = recordType;
+    }
+
+    public List<Link> getSubLinks() {
+        return subLinks;
+    }
+
+    public void setSubLinks(List<Link> subLinks) {
+        this.subLinks = subLinks;
     }
 
     public Boolean getRestrictedLink() {
