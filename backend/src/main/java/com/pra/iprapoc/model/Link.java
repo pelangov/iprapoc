@@ -60,7 +60,7 @@ public class Link implements Serializable {
     @JoinColumn(name = "parent_link__c", referencedColumnName = "sfid")
     public Link parentLink;
 
-    @OneToMany(mappedBy="parentLink", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy="parentLink", cascade = CascadeType.ALL)
     @OrderBy("weight, name")
     public List<Link> subLinks;
 
