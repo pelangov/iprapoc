@@ -49,7 +49,7 @@ public class POCController {
     @GetMapping(value = "/leftMenuLinks/html", produces = MediaType.TEXT_HTML_VALUE)
     public String leftMenuLinks() {
         StringBuilder html = new StringBuilder();
-        List<Link> mainLinks = linkRepository.findByRecordTypeNameOrderByWeightAscNameAsc("Main Menu Item");
+        List<Link> mainLinks = linkRepository.leftMenuLinks();
         for (Link mLink : mainLinks) {
             if (mLink.getName().equals("Dashboard")) {
                 html.append("\n<li><a href=\"").append(mLink.getLink()).append("\"><i class=\"").append(mLink.getCssClass()).append("\"></i>").append(mLink.getName()).append("</a>");
@@ -127,6 +127,6 @@ public class POCController {
     @ResponseBody
     @GetMapping(value = "/leftMenuLinks/json", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Link> mainMenuItems() {
-        return linkRepository.findByRecordTypeNameOrderByWeightAscNameAsc("Main Menu Item");
+        return linkRepository.leftMenuLinks();
     }
 }

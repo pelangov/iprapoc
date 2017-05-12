@@ -58,11 +58,11 @@ public class Link implements Serializable {
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "parent_link__c", referencedColumnName = "sfid")
-    public Link parentLink;
+    private Link parentLink;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy="parentLink", cascade = CascadeType.ALL)
     @OrderBy("weight, name")
-    public List<Link> subLinks;
+    private List<Link> subLinks;
 
     @ManyToOne
     @JoinColumn(name = "recordtypeid", referencedColumnName = "sfid")
