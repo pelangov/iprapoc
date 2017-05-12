@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd"
+         updateCheck="false" monitoring="autodetect" dynamicConfig="true">
+
+    <cache name="mainmenu"
+           maxElementsInMemory="10000" eternal="true"
+           overflowToDisk="false"
+           timeToLiveSeconds="100" timeToIdleSeconds="0"
+           memoryStoreEvictionPolicy="LFU" transactionalMode="off">
+    </cache>
+</ehcache>
