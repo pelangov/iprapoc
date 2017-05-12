@@ -65,7 +65,7 @@ public class POCController {
             }
 
             //If Sub Menus
-            List<Link> subLinks = linkRepository.findByRecordTypeNameAndParentLinkSfIdOrderByWeightAscNameAsc("Sub Menu Item", mLink.getSfId());
+            List<Link> subLinks = mLink.getSubLinks();
             if (!subLinks.isEmpty() || mLink.getName().equals("Dashboard") || mLink.getName().equals("Applications")) {
                 if (subLinks.size() < 5)
                     html.append("\n\t<ul class=\"submenu\">");
@@ -88,7 +88,7 @@ public class POCController {
 
                         if (sLink.getNoOfSubSubMenus() != null && sLink.getNoOfSubSubMenus() > 0) {
                             //If Sub Sub Menus
-                            List<Link> subSubLinks = linkRepository.findByRecordTypeNameAndParentLinkSfIdOrderByWeightAscNameAsc("Sub-Sub Menu Item", sLink.getSfId());
+                            List<Link> subSubLinks = sLink.getSubLinks();
 
                             if (!subSubLinks.isEmpty() || sLink.getName().equals("Dashboard")) ;
                             {

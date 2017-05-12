@@ -11,6 +11,4 @@ import java.util.List;
 public interface LinkRepository extends JpaRepository<Link, Long> {
     @Cacheable("mainmenu")
     List<Link> findByRecordTypeNameOrderByWeightAscNameAsc(String name);
-    @Cacheable("submenu")
-    List<Link> findByRecordTypeNameAndParentLinkSfIdOrderByWeightAscNameAsc(String name, String parentLink);
 }
