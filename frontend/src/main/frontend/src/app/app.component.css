@@ -2,7 +2,7 @@
 ul.dropdown{
     list-style: none;
 	padding: 6px 5px;
-	border-radius: 0 0 10 10;
+	/*border-radius: 0 0 10 10; */
 	-webkit-border-bottom-right-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -375,7 +375,7 @@ div.pra-widget.big {
   }
  div#widget-industry-watchleftcol{
 
-    box-sizing:boder-box;
+    box-sizing:border-box;
     float:left;
     width:100%;
     border:1px solid #E8EDF2;
@@ -648,16 +648,11 @@ sup {
 sub {
 	bottom: -0.25em;
 }
-@font-face {
-	font-family: 'ProximaNovaLight';
-	src: url(../fonts/proximanova-light-webfont.eot);
-	src: url(../fonts/ProximaNova-Light.eot?#iefix) format('embedded-opentype'),
-		 url('../fonts/proximanova-light-webfont.woff') format('woff'),
-}
+
 @font-face {
     font-family: 'ProximaNovaBold';
      src: url(../fonts/proximanova-bold-webfont.eot);
-     src: url(../fonts/ProximaNova-Bold.eot?#iefix) format('embedded-opentype');
+
      src: url('../fonts/proximanova-bold-webfont.woff') format('woff');
      font-weight: bold;
      font-style: normal;
@@ -665,7 +660,7 @@ sub {
 @font-face {
      font-family:'ProximaNovaSbold';
      src: url(../fonts/proximanova-sbold-webfont.eot);
-     src: url(../fonts/ProximaNova-Sbold.eot?#iefix) format('embedded-opentype');
+
      src: url('../fonts/proximanova-sbold-webfont.woff') format('woff');
      font-weight: 600;
      font-style: normal;
@@ -733,10 +728,10 @@ sub {
 .pra-icon-policy-updates { position: absolute; right: 13px; bottom: 0; width: 74px; height: 60px;
 	background-position: -140px -120px;
 }
-.pra-icon-policy-updates1 { background-image:url(../images/emp.png);position: absolute; right: 8px; bottom: 1; width: 50px; height: 45px;
+.pra-icon-policy-updates1 { background-image:url(../images/emp.png);position: absolute; right: 8px; width: 50px; height: 45px;
 	/*background-position: -140px -120px;*/
 }
-.pra-icon-department-contacts { background-image:url(../images/user.png); position: absolute; right: 5px; bottom: 3; width: 55px; height: 45px;
+.pra-icon-department-contacts { background-image:url(../images/user.png); position: absolute; right: 5px; width: 55px; height: 45px;
 	/*background-position: -255px -120px;*/
 }
 .pra-icon-events-holidays { position: absolute; right: 3px; bottom: 0; width: 80px; height: 60px;
@@ -796,7 +791,7 @@ ul li, ol li{
 	line-height:normal !important;
 	font-size:16px !important;
 	color: #1e1e1e !important;
-	word-break: break-word;
+	word-break: break-all;
 }
 .pra-content-detail span  {
 	font-family: 'ProximaNovaReg', arial, sans-serif !important;
@@ -986,10 +981,8 @@ input[type="search"] {
 input[type="search"]:focus {
 	background-color:#249db7;
 }
-::-webkit-selection {
-  background-color: #249db7 !important;
-  color: #FFFFFF;
-}
+
+
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
 }
@@ -1688,8 +1681,6 @@ a.logout:hover {
 	/*background: url("..../images/submit.png") no-repeat scroll 0 0 transparent;*/
 	background: linear-gradient(45deg, #4c8ecd 1%, #007BBE 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	color: #FFFFFF;
-	width:100;
-	height:35;
 	border-radius: 4px;
 	border: none;
 	font-weight:bold;
@@ -1698,8 +1689,6 @@ a.logout:hover {
 	/*background: url("..../images/submit.png") no-repeat scroll 0 0 transparent;*/
 	background: linear-gradient(45deg, #4c8ecd 1%, #007BBE 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	color: #FFFFFF;
-	width:100;
-	height:35;
 	border-radius: 4px;
 	border: none;
 	font-weight:bold;
@@ -1708,8 +1697,6 @@ a.logout:hover {
 	/*background: url("..../images/submit.png") no-repeat scroll 0 0 transparent;*/
 	background: linear-gradient(45deg, #4c8ecd 1%, #007BBE 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	color: #FFFFFF;
-	width:100;
-	height:35;
 	border-radius: 4px;
 	border: none;
 	font-weight:bold;
@@ -1737,7 +1724,7 @@ a.logout:hover {
 	font: 1.2em 'ProximaNova',arial,sans-serif;
 	margin-bottom: 4px;
 	font-size:20px;
-	font-weight:boldl
+
 }
 .pra-widget .wiki-title {
 	color: #005cab;
@@ -1919,7 +1906,7 @@ height:46px;
 background-image: url(../images/Quick-links-Icon1.png);
 position: absolute;
 right: 15px;
-bottom: 3;
+
 width: 70px;
 height:53px;
 margin-top: -14px;
@@ -2043,10 +2030,7 @@ margin-top: -14px;
 
 /* Corporate Calendar */
 
-.calender-month-title {
-	margin: 5 5 5 14;
-	border: 0;
-}
+
 
 .calender-month-title  td {
 	color: #fd7933 !important;
@@ -2096,12 +2080,12 @@ margin-top: -14px;
 .widget-calendar-details td{
 	width: 14.28%;
 	height: 100%;
-	padding: 10 10 10 10;
+
 	border: 0;
 	font-size: 0.9em;
 	font-family: 'ProximaNovaReg', arial, sans-serif;
 	vertical-align: top;
-	white-space:wrap
+	white-space:normal
 }
 
 .widget-calendar-details li{
@@ -2650,7 +2634,7 @@ a.news-category:hover {
 	display: none;
 	width: 15px; height: 13px;
 }
-.navigation li.active > .subsubmenu,
+.navigation li.active > .subsubmenu
 /*.navigation li.active:hover > .subsubmenu*/ {
 	position: relative;
 	top: 0;
@@ -3037,16 +3021,7 @@ filter: Alpha(Opacity=75);
 /* Icon Fonts
 *********************************/
 /* Font-face Icons */
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'flexslider-icon';
-	src:url('/fonts/flexslider-icon.eot');
-	src:url('/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/flexslider-icon.woff') format('woff'),
-		url('/fonts/flexslider-icon.ttf') format('truetype'),
-		url('/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-}
+
 
 /* FlexSlider Necessary Styles
 *********************************/
@@ -3336,7 +3311,7 @@ zoom: 1;
 
    div#widget-industry-watch{
 
-    box-sizing:boder-box;
+    box-sizing:border-box;
     float:left;
   width:100%;
   border:1px solid #E8EDF2;
@@ -3346,7 +3321,7 @@ zoom: 1;
 
   div#widget-industry-watch{
 
-   box-sizing:none;
+
     float:left;
   width:50%;
  border:1px solid #E8EDF2;
@@ -3577,22 +3552,7 @@ sub {
 }
 /* Fonts
 	------------------------------------------------------------------------ */
-@font-face {
-	font-family: ProximaNovaLight;
-	src: url(/fonts/ProximaNova-Light.otf);
-}
-@font-face {
-	font-family: ProximaNovaReg;
-	src: url(/fonts/ProximaNova-Reg.otf);
-}
-@font-face {
-	font-family: ProximaNovaBold;
-	src: url(/fonts/ProximaNova-Bold.otf);
-}
-@font-face {
-	font-family: ProximaNovaSbold;
-	src: url(/fonts/ProximaNova-Sbold.otf);
-}
+
 /* Icons
 	------------------------------------------------------------------------ */
 [class^="pra-icon"] {
@@ -3656,10 +3616,10 @@ sub {
 .pra-icon-policy-updates { position: absolute; right: 3px; bottom: 0; width: 70px; height: 60px;
 	background-position: -140px -120px;
 }
-.pra-icon-policy-updates1 { background-image:url(../images/emp.png);position: absolute; right: 8px; bottom: 1; width: 50px; height: 45px;
+.pra-icon-policy-updates1 { background-image:url(../images/emp.png);position: absolute; right: 8px;  width: 50px; height: 45px;
 	/*background-position: -140px -120px;*/
 }
-.pra-icon-department-contacts { background-image:url(../images/user.png); position: absolute; right: 5px; bottom: 3; width: 55px; height: 45px;
+.pra-icon-department-contacts { background-image:url(../images/user.png); position: absolute; right: 5px; width: 55px; height: 45px;
 	/*background-position: -255px -120px;*/
 }
 .pra-icon-events-holidays { position: absolute; right: 3px; bottom: 0; width: 80px; height: 60px;
@@ -4420,8 +4380,7 @@ vertical-align: middle;
 	/*background: url("..../images/submit.png") no-repeat scroll 0 0 transparent;*/
 	background: linear-gradient(45deg, #4c8ecd 1%, #007BBE 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	color: #FFFFFF;
-	width:100;
-	height:35;
+
 	border-radius: 4px;
 	border: none;
 	font-weight:bold;
@@ -4430,8 +4389,7 @@ vertical-align: middle;
 	/*background: url("..../images/submit.png") no-repeat scroll 0 0 transparent;*/
 	background: linear-gradient(45deg, #4c8ecd 1%, #007BBE 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	color: #FFFFFF;
-	width:100;
-	height:35;
+
 	border-radius: 4px;
 	border: none;
 	font-weight:bold;
@@ -4440,8 +4398,7 @@ vertical-align: middle;
 	/*background: url("..../images/submit.png") no-repeat scroll 0 0 transparent;*/
 	background: linear-gradient(45deg, #4c8ecd 1%, #007BBE 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	color: #FFFFFF;
-	width:100;
-	height:35;
+
 	border-radius: 4px;
 	border: none;
 	font-weight:bold;
@@ -4469,7 +4426,7 @@ vertical-align: middle;
 	font: 1.2em 'ProximaNova',arial,sans-serif;
 	margin-bottom: 4px;
 	font-size:20px;
-	font-weight:boldl
+	font-weight:bold;
 }
 .pra-widget .wiki-title {
 	color: #005cab;
@@ -4725,10 +4682,7 @@ height:46px;
 
 /* Corporate Calendar */
 
-.calender-month-title {
-	margin: 5 5 5 14;
-	border: 0;
-}
+
 
 .calender-month-title  td {
 	color: #ed5c16;
@@ -4788,12 +4742,12 @@ height:46px;
 .widget-calendar-details td{
 	width: 14.28%;
 	height: 100%;
-	padding: 10 10 10 10;
+
 	border: 0;
 	font-size: 0.9em;
 	font-family: 'ProximaNovaReg', arial, sans-serif;
 	vertical-align: top;
-	white-space:wrap
+
 }
 
 .widget-calendar-details li{
@@ -5455,16 +5409,7 @@ filter: Alpha(Opacity=75);
 /* Icon Fonts
 *********************************/
 /* Font-face Icons */
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'flexslider-icon';
-	src:url('/fonts/flexslider-icon.eot');
-	src:url('/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/flexslider-icon.woff') format('woff'),
-		url('/fonts/flexslider-icon.ttf') format('truetype'),
-		url('/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-}
+
 
 /* FlexSlider Necessary Styles
 *********************************/
