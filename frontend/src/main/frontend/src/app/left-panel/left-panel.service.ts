@@ -20,7 +20,7 @@ import {Logger} from "angular2-logger/core";
   }
 
   getLeftMenuLinks(): Observable<Link[]> {
-    return this.http.get("http://localhost:8080/api/leftMenuLinks/json")
+    return this.http.get(this.menuLinksUrl)
       .map(res => res.json())
   }
    extractData(res: Response) {
