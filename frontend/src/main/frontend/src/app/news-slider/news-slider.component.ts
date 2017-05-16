@@ -17,7 +17,7 @@ import {Component} from '@angular/core';
             </div>
         </div>
     </div>`,
-    styleUrls : ['./app.component.css']
+    styleUrls : ['../app.component.css']
 })
 
 export class newsSliderComponent {}

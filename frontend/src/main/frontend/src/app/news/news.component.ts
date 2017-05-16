@@ -42,7 +42,7 @@ import {Component} from '@angular/core';
             </tr>
             </table>
         </div>`,
-        styleUrls : ['./app.component.css']
+        styleUrls : ['../app.component.css']
 })
 
 export class newsComponent {}

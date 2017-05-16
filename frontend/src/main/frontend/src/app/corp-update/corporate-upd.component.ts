@@ -18,7 +18,7 @@ import {Component} from '@angular/core';
             <span class="read-morearrow">→</span>
         </div>
     </div>`,
-    styleUrls: ['./app.component.css']
+    styleUrls: ['../app.component.css']
 })
 
 export class corporateUpdComponent {}

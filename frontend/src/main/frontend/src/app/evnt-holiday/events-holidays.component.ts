@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
- 
+
 @Component ({
     selector: 'pra-eventsholidays',
     template : ` <div class="pra-widget small events-holidays" id="divEvents" style="margin-bottom:10px">
@@ -59,7 +59,7 @@ import {Component} from '@angular/core';
                  <span class="read-morearrow">→</span>
         </div>      
       </div>`,
-    styleUrls: ['./app.component.css']
+    styleUrls: ['../app.component.css']
 })
 
 export class eventsHolidaysComponent {}

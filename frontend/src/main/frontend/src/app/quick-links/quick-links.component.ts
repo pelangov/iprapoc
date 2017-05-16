@@ -14,7 +14,7 @@ import {Component} from '@angular/core';
 	      </ul>
         </div>
     </div>`,
-    styleUrls: ['./app.component.css']
+    styleUrls: ['../app.component.css']
 })
 
 export class quickLinksComponent {}
