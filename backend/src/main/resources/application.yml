@@ -11,3 +11,7 @@ spring:
         properties:
             hibernate:
                 default_schema: salesforce
+management:
+    context-path: /actuator
+    security:
+        enabled: false
