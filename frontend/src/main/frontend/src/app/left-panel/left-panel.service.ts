@@ -12,7 +12,7 @@ import {Logger} from "angular2-logger/core";
 @Injectable()
   export class LeftPanelService {
 
-  private menuLinksUrl = 'https://iprapoc.herokuapp.com/api/leftMenuLinks/json';
+  private menuLinksUrl = '/api/links/leftMenu';
 
   headers: Headers;
   options: RequestOptions;
